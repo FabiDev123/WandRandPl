@@ -20,6 +20,8 @@ public class PlotChangeManager {
                 for (Plot plots : plotPlayer.getCurrentPlot().getConnectedPlots()){
                     plots.getArea().getPlotManager().setComponent(plots.getId(), where, pattern, null, null);
                 }
+            }else{
+                plot.getArea().getPlotManager().setComponent(plot.getId(), where, pattern, null, null);
             }
         }
 
