@@ -1,5 +1,6 @@
 package de.fabidev;
 
+import de.fabidev.commands.TestCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Wandrand extends JavaPlugin {
@@ -20,7 +21,7 @@ public class Wandrand extends JavaPlugin {
     }
 
     private void registerCommands(){
-
+        this.getCommand("test").setExecutor(new TestCommand());
     }
 
 
