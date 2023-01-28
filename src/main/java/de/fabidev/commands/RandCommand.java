@@ -7,22 +7,20 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class WandCommand implements CommandExecutor {
+public class RandCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String s, @NotNull String[] args) {
 
         if(sender instanceof Player){
             Player p = (Player) sender;
-            if (p.hasPermission(Strings.permissionWand) || p.hasPermission(Strings.permissionAdmin)){
-                //TODO Inventory opener für Wand einfügen!
+            if (p.hasPermission(Strings.permissionRand) || p.hasPermission(Strings.permissionAdmin)){
+                //TODO Inventory opener für Rand einfügen!
             }else{
                 p.sendMessage(Strings.noPermission);
             }
         }else{
             System.out.println(Strings.noConsoleCommand);
         }
-
-
 
 
         return false;
