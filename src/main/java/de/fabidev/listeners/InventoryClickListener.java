@@ -12,13 +12,21 @@ public class InventoryClickListener implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent e){
         if(e.getView().getTitle().equalsIgnoreCase(Strings.invBorder)){
-            e.setCancelled(true);
-            PlotChangeManager.change(e.getCurrentItem().getType(), (Player)e.getWhoClicked(), "border");
-            e.getWhoClicked().closeInventory();
+            try {
+                e.setCancelled(true);
+                PlotChangeManager.change(e.getCurrentItem().getType(), (Player) e.getWhoClicked(), "border");
+                e.getWhoClicked().closeInventory();
+            }catch (Exception ex){
+
+            }
         }else if (e.getView().getTitle().equalsIgnoreCase(Strings.invWall)){
-            e.setCancelled(true);
-            PlotChangeManager.change(e.getCurrentItem().getType(), (Player)e.getWhoClicked(), "wall");
-            e.getWhoClicked().closeInventory();
+            try {
+                e.setCancelled(true);
+                PlotChangeManager.change(e.getCurrentItem().getType(), (Player) e.getWhoClicked(), "wall");
+                e.getWhoClicked().closeInventory();
+            }catch (Exception ex){
+
+            }
         }
 
     }
