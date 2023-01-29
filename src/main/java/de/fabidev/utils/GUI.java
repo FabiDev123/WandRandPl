@@ -65,7 +65,7 @@ public class GUI {
         invWall.addItem(isDiamondWall);
 
         invBorder.addItem(isStoneBorder);
-        invBorder.addItem(isEmeraldWall);
+        invBorder.addItem(isEmeraldBorder);
         invBorder.addItem(isDiamondBorder);
     }
 
