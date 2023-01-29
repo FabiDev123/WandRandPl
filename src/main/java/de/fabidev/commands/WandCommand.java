@@ -1,5 +1,6 @@
 package de.fabidev.commands;
 
+import de.fabidev.Wandrand;
 import de.fabidev.utils.Strings;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,6 +15,7 @@ public class WandCommand implements CommandExecutor {
         if(sender instanceof Player){
             Player p = (Player) sender;
             if (p.hasPermission(Strings.permissionWand) || p.hasPermission(Strings.permissionAdmin)){
+                p.openInventory(Wandrand.gui.invWall);
                 //TODO Inventory opener für Wand einfügen!
             }else{
                 p.sendMessage(Strings.noPermission);

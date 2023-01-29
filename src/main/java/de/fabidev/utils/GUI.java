@@ -22,8 +22,8 @@ public class GUI {
     ItemStack isEmeraldBorder = new ItemStack(Material.EMERALD_BLOCK);
     ItemMeta imEmeraldBorder;
 
-    Inventory invWall = Bukkit.createInventory(null, 27, Strings.invWall);
-    Inventory invBorder = Bukkit.createInventory(null, 27, Strings.invBorder);
+    public Inventory invWall = Bukkit.createInventory(null, 27, Strings.invWall);
+    public Inventory invBorder = Bukkit.createInventory(null, 27, Strings.invBorder);
 
     public GUI(){
         attachItemMeta();
