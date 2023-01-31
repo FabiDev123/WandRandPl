@@ -8,11 +8,11 @@ import com.sk89q.worldedit.function.pattern.Pattern;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-public class PlotChangeManager {
+public class    PlotChangeManager {
 
     public static void change(Material material, Player player, String where){
 
-        PlotPlayer<Player> plotPlayer = PlotPlayer.from(player);
+            PlotPlayer<Player> plotPlayer = PlotPlayer.from(player);
         Pattern pattern = ((BlockBucket)ConfigurationUtil.BLOCK_BUCKET.parseString(material.name())).toPattern();
         Plot plot = plotPlayer.getCurrentPlot();
         if(plot != null && plot.getOwners().size() > 0){
@@ -22,7 +22,7 @@ public class PlotChangeManager {
                 }
             }else{
                 plot.getArea().getPlotManager().setComponent(plot.getId(), where, pattern, null, null);
-            }
+            } //ClassicPlotManager!!!
         }
 
     }

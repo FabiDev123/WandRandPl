@@ -1,5 +1,6 @@
 package de.fabidev;
 
+import de.fabidev.commands.BodenCommand;
 import de.fabidev.commands.RandCommand;
 import de.fabidev.commands.TestCommand;
 import de.fabidev.commands.WandCommand;
@@ -33,6 +34,7 @@ public class Wandrand extends JavaPlugin {
         this.getCommand("test").setExecutor(new TestCommand());
         this.getCommand("wand").setExecutor(new WandCommand());
         this.getCommand("rand").setExecutor(new RandCommand());
+        this.getCommand("boden").setExecutor(new BodenCommand());
     }
 
 

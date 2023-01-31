@@ -12,9 +12,11 @@ public class Strings {
     public static String permissionAdmin = "wandrand.admin";
     public static String permissionWand = "wandrand.command.wand";
     public static String permissionRand = "wandrand.command.rand";
+    public static String permissionBoden = "wandrand.command.boden";
 
     public static String invWall = "§4§lWand-Menü";
     public static String invBorder = "§2§lRand-Menü";
+    public static String invBoden = "§3§lBoden-Menü";
 
     public static String stoneWall = "§a§lSteinwand";
     public static String diamondWall = "§a§lDiamantwand";

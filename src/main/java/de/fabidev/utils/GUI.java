@@ -6,7 +6,17 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GUI {
+
+
+    private static List<ItemStack> wandBloecke = new ArrayList();
+
+    private static List<ItemStack> randBloecke = new ArrayList<>();
+
+    private static List<ItemStack> bodenBloecke = new ArrayList<>();
 
     ItemStack isStoneWall = new ItemStack(Material.STONE);
     ItemMeta imStoneWall;
@@ -24,6 +34,7 @@ public class GUI {
 
     public Inventory invWall = Bukkit.createInventory(null, 27, Strings.invWall);
     public Inventory invBorder = Bukkit.createInventory(null, 27, Strings.invBorder);
+    public Inventory invBoden = Bukkit.createInventory(null, 27, Strings.invBoden);
 
     public GUI(){
         attachItemMeta();
