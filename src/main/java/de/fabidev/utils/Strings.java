@@ -27,4 +27,17 @@ public class Strings {
 
 
 
+
+
+
+    public static final String permissionSquire = "wandrand.squire";
+    public static final String permissionKnight = "wandrand.knight";
+    public static final String permissionDuke = "wandrand.duke";
+    public static final String permissionSenator = "wandrand.senator";
+    public static final String permissionKing = "wandrand.king";
+    public static final String permissionEmperor = "wandrand.emperor";
+
+
+
+
 }

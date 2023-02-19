@@ -1,6 +1,7 @@
 package de.fabidev.commands;
 
 import de.fabidev.Wandrand;
+import de.fabidev.utils.GUI;
 import de.fabidev.utils.Strings;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -15,8 +16,7 @@ public class RandCommand implements CommandExecutor {
         if(sender instanceof Player){
             Player p = (Player) sender;
             if (p.hasPermission(Strings.permissionRand) || p.hasPermission(Strings.permissionAdmin)){
-                p.openInventory(Wandrand.gui.invBorder);
-                //TODO Inventory opener für Rand einfügen!
+                GUI.openGUIRand(p, 1);
             }else{
                 p.sendMessage(Strings.noPermission);
             }
